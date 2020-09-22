@@ -14,7 +14,7 @@ npm run serve
 ```
 npm run build
 ```
-
+https://alex3aguiar.github.io/skaktesktate/.
 ### Lints and fixes files
 ```
 npm run lint
