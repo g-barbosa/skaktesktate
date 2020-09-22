@@ -1,6 +1,9 @@
 <template>
   <div id="app">
   <div>
+     <audio  autoplay loop>
+       <source src="./assets/daasdsdd.mp3" type="audio/mp3">
+    </audio>
    
     <img   v-if="step == 0" src="./assets/skate/dasdasd1.png">
     <img  v-if="step == 1" src="./assets/skate/andando.gif">
