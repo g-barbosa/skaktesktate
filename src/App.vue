@@ -1,22 +1,24 @@
 <template>
   <div id="app">
-  <div>
-     <audio  autoplay loop controls>
-       <source src="./assets/daasdsdd.mp3" type="audio/mp3">
-    </audio>
-   
-    <img   v-if="step == 0" src="./assets/skate/dasdasd1.png">
-    <img  v-if="step == 1" src="./assets/skate/andando.gif">
+    <div >
+      <div class="audio">
+        <audio  autoplay loop controls>
+          <source src="./assets/daasdsdd.mp3" type="audio/mp3">
+        </audio>   
+      </div>
 
-    <img   v-if="step == 2" src="./assets/skate/tudo.gif">
-  
+      <div class="images">
+        <img   v-if="step == 0" src="./assets/skate/dasdasd1.png">
+        <img  v-if="step == 1" src="./assets/skate/andando.gif">
+        <img   v-if="step == 2" src="./assets/skate/tudo.gif">
+      </div> 
 
-  </div>
-  <div>
-  <button v-if="step == 1"   v-on:click="step = 0"> parar</button>
-  <button v-if="step == 0"   v-on:click="step = 1">remar</button>
-  <button   v-if="step != 2" :disabled="step == 0" v-on:click="step = 2">se empolgar</button>
-  </div>
+      <div class="buttons">
+        <button v-if="step == 1"   v-on:click="step = 0"> parar</button>
+        <button v-if="step == 0"   v-on:click="step = 1">remar</button>
+        <button   v-if="step != 2" :disabled="step == 0" v-on:click="step = 2">se empolgar</button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -39,6 +41,7 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 img{
   width: 200px
 }
